@@ -21,13 +21,13 @@ service MASTERDATA {
         ID,
         *
     };
+    
 }
 
     annotate MASTERDATA.Business_Partner with @odata.draft.enabled;
     annotate MASTERDATA.Store with @odata.draft.enabled;
     annotate MASTERDATA.Product with @odata.draft.enabled;
     
-
 
     annotate MASTERDATA.Business_Partner with {
     name      @assert.format: '^[a-zA-Z]{2,}$';
